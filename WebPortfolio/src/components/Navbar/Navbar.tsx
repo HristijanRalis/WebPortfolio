@@ -5,8 +5,18 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const toggleMenu = () => setOpenMenu(!openMenu);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    setOpenMenu(false);
+  };
   return (
     <div className="Navbar">
       <div className="LOGO">
@@ -16,23 +26,38 @@ export const Navbar = () => {
       <nav className="Navigation">
         <ul className="NavList">
           <li>
-            <Link to="/" className="nav-list-item">
+            <Link
+              to="/"
+              className="nav-list-item"
+              onClick={() => scrollToSection("home")}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/aboutMe" className="nav-list-item">
+            <Link
+              to="/aboutMe"
+              className="nav-list-item"
+              onClick={() => scrollToSection("aboutMe")}
+            >
               About Me
             </Link>
           </li>
           <li>
-            <Link to="/projects" className="nav-list-item">
+            <Link
+              to="/projects"
+              className="nav-list-item"
+              onClick={() => scrollToSection("projects")}
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-list-item">
-              {" "}
+            <Link
+              to="/contact"
+              className="nav-list-item"
+              onClick={() => scrollToSection("contact")}
+            >
               Contact
             </Link>
           </li>
@@ -66,7 +91,6 @@ export const Navbar = () => {
             </li>
             <li>
               <Link to="/contact" className="hamburger-nav-list-item">
-                {" "}
                 Contact
               </Link>
             </li>
