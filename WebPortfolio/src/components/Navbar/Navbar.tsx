@@ -5,7 +5,6 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [visible, setVisible] = useState(false);
 
   const toggleMenu = () => setOpenMenu(!openMenu);
 
@@ -26,40 +25,36 @@ export const Navbar = () => {
       <nav className="Navigation">
         <ul className="NavList">
           <li>
-            <Link
-              to="/"
+            <button
               className="nav-list-item"
               onClick={() => scrollToSection("home")}
             >
               Home
-            </Link>
+            </button>
           </li>
           <li>
-            <Link
-              to="/aboutMe"
+            <button
               className="nav-list-item"
               onClick={() => scrollToSection("aboutMe")}
             >
               About Me
-            </Link>
+            </button>
           </li>
           <li>
-            <Link
-              to="/projects"
+            <button
               className="nav-list-item"
               onClick={() => scrollToSection("projects")}
             >
               Projects
-            </Link>
+            </button>
           </li>
           <li>
-            <Link
-              to="/contact"
-              className="nav-list-item"
+            <button
               onClick={() => scrollToSection("contact")}
+              className="nav-list-item"
             >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </nav>
@@ -75,24 +70,36 @@ export const Navbar = () => {
         <nav className="hamburgerNavigation">
           <ul className="hamburgerList">
             <li>
-              <Link to="/" className="hamburger-nav-list-item">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="hamburger-nav-list-item"
+              >
                 Home
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/aboutMe" className="hamburger-nav-list-item">
+              <button
+                onClick={() => scrollToSection("aboutMe")}
+                className="hamburger-nav-list-item"
+              >
                 About Me
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/projects" className="hamburger-nav-list-item">
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="hamburger-nav-list-item"
+              >
                 Projects
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/contact" className="hamburger-nav-list-item">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="hamburger-nav-list-item"
+              >
                 Contact
-              </Link>
+              </button>
             </li>
           </ul>
         </nav>

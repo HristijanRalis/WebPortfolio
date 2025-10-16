@@ -76,6 +76,8 @@
   text-transform: uppercase;
   transition: 0.5s ease;
   font-weight: 600;
+  border: none;
+  background-color: transparent;
 }
 
 .nav-list-item:hover {
@@ -122,6 +124,8 @@
   text-decoration: none;
   font-weight: bold;
   transition: 0.2s ease;
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger-nav-list-item:hover {
@@ -204,6 +208,45 @@
   box-shadow: 0 1px 0 #1c7471;
 }
 
+/* ====== CONTACT ====== */
+
+.Contact {
+  width: 100%;
+  background-color: #020b0b;
+  height: auto;
+}
+
+.contactTitle {
+  color: #1c7471;
+  font-size: 50px;
+}
+
+.contactLink {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+}
+
+.contactDescription {
+  margin-bottom: 0;
+}
+
+.rowBlur {
+  position: relative;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 55px;
+  padding: 2rem;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(35, 146, 143, 0.6);
+  animation: glowCycle 3s linear infinite;
+}
 /* ====== FOOTER ====== */
 .Footer {
   width: 100%;
@@ -212,6 +255,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: #165c5a;
 }
 
 /* ====== KEYFRAMES ====== */
