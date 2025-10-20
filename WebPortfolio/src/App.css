@@ -4,6 +4,7 @@
 #root {
   max-width: 100%;
   margin: 0;
+  background-color: rgb(17, 22, 33);
 }
 .section {
   min-height: 100vh;
@@ -136,7 +137,7 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #23928f;
+  background-color: #ff00dd;
   width: 40px;
   height: 40px;
   display: flex;
@@ -247,6 +248,80 @@
   box-shadow: 0 0 10px rgba(35, 146, 143, 0.6);
   animation: glowCycle 3s linear infinite;
 }
+
+.contactSection {
+  background-color: rgb(26, 31, 44);
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.contactSection:hover {
+  box-shadow: rgba(255, 0, 221, 0.6) 0px 5px 15px;
+}
+.contactDescription {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.fontIcon {
+  color: rgb(140, 123, 221);
+}
+
+.contactIcon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 42, 65);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.mailLink {
+  text-decoration: none;
+  color: white;
+}
+
+.label {
+  color: grey;
+}
+.contactDescriptionLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactMe {
+  color: white;
+}
+
+.socialLinks {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.socialLinkBtn {
+  background-color: rgb(39, 42, 65);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(140, 123, 221);
+}
+
+.socialLinkBtn:hover {
+  background-color: rgb(140, 123, 221);
+  color: white;
+}
 /* ====== FOOTER ====== */
 .Footer {
   width: 100%;
@@ -255,7 +330,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #165c5a;
+  background-color: rgb(20, 25, 37);
 }
 
 /* ====== KEYFRAMES ====== */
