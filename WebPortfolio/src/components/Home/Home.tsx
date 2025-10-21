@@ -1,5 +1,3 @@
-import { LearnMoreBtn } from "../learnMoreBtn";
-
 export const Home = () => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("aboutMe");

@@ -40,19 +40,31 @@ export const Contact = () => {
               <div className="contactDescriptionLinks">
                 <ul className="socialLinks">
                   <li className="socialLink">
-                    <button className="socialLinkBtn">
+                    <a
+                      href="https://www.linkedin.com/in/hristijan-ralevski-67152120b/"
+                      className="socialLinkBtn"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faLinkedin} />
-                    </button>
+                    </a>
                   </li>
                   <li className="socialLink">
-                    <button className="socialLinkBtn">
+                    <a
+                      href="https://github.com/HristijanRalis"
+                      className="socialLinkBtn"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faGithub} />
-                    </button>
+                    </a>
                   </li>
                   <li className="socialLink">
-                    <button className="socialLinkBtn">
+                    <a
+                      href="https://x.com/HristijanRa"
+                      className="socialLinkBtn"
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={faTwitter} />
-                    </button>
+                    </a>
                   </li>
                 </ul>
               </div>
