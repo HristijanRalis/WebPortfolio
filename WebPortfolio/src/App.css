@@ -14,10 +14,23 @@
 }
 
 .Title {
-  color: #23928f;
+  background: linear-gradient(90deg, rgb(151, 133, 245), #ff00dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.quote {
+  background: linear-gradient(90deg, rgb(151, 133, 245), #ff00dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .DESC {
   font-size: 20px;
 }
@@ -244,6 +257,11 @@
 .goOnAboutMe:active {
   transform: translateY(4px);
   box-shadow: 0 1px 0 #1c7471;
+}
+
+/* ====== ABOUT ====== */
+.mainPicture {
+  width: 400px;
 }
 
 /* ====== CONTACT ====== */
