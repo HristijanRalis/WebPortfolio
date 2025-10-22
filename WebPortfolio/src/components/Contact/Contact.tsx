@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export const Contact = () => {
   return (
-    <div className="Contact ">
+    <div className="Contact py-5 ">
       <div className="container">
         <div className="row  g-4">
           <div className="col-12 col-md-6 d-flex flex-column gap-3">
