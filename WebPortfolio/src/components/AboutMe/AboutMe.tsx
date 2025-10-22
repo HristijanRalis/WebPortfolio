@@ -9,13 +9,13 @@ export const AboutMe = () => {
           <Title title="About Me" />
         </div>
 
-        <div className="row align-items-center  py-4">
+        <div className="row align-items-center AboutSmallDevices  py-4">
           <div className="col-12 col-md-6">
             <div className="aboutInner">
               <img src="/images/ralisMain.png" alt="" className="mainPicture" />
             </div>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 ">
             <Description
               description="I’m an enthusiast in the field of web programming, passionate about building dynamic and meaningful web applications. My journey began with creating simple projects using HTML and CSS, and over time, I’ve grown into developing fully functional, modern web pages that bring real value to users.
 
