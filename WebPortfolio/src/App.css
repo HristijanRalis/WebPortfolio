@@ -576,9 +576,39 @@
   }
 }
 /* ====== RESPONSIVELY ====== */
-@media (min-width: 1200px) {
+@media (max-width: 1400px) {
+  .ProjectBody {
+    width: calc(50% - 15px);
+    height: auto;
+  }
+
+  .ProjectContent {
+    height: auto;
+  }
+
+  .ProjectImage {
+    height: 250px;
+  }
+
+  .stackBtn {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1200px) {
   .BANNER {
     background-size: cover;
+  }
+  .ProjectBody {
+    width: calc(50% -15px);
+    height: auto;
+  }
+
+  .ProjectContent {
+    height: auto;
+  }
+
+  .ProjectImage {
+    height: 250px; /* a bit taller for tablets */
   }
 }
 @media (max-width: 764px) {
@@ -638,16 +668,31 @@
   .myExpertize p {
     animation: none;
   }
+
+  .Contact {
+    padding: 20px;
+  }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 375px) {
+  .mainTitle {
+    font-size: 20px;
+  }
+
+  .mainDesc {
+    font-size: 10px;
+  }
   .DESC {
     width: 100%;
     font-size: 20px;
   }
 
   .myExpertize {
-    width: 100%;
+    width: 90%;
+  }
+
+  .myExpertize p {
+    font-size: 10px;
   }
   .Projects {
     width: 100%;

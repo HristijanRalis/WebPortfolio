@@ -12,7 +12,7 @@ export const Home = () => {
         <div className="BannerContainer">
           <h5 className="subTitle">Hello I'm Hristijan</h5>
           <h1 className="mainTitle mb-3">
-            The best thing come from living{" "}
+            The best things come from living{" "}
             <span className="quote">outside of your comfort zone.</span>
           </h1>
           <p className="mainDesc">
