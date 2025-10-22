@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
   scroll-margin-top: 100px;
-  padding-top: 100px;
+  padding-top: 100px 0 0 0;
+  box-sizing: border-box;
 }
 
 .Title {
@@ -368,10 +369,15 @@
 }
 
 /* ====== PROJECTS ====== */
+
 .ProjectsContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ProjectBody {
@@ -576,6 +582,15 @@
   }
 }
 @media (max-width: 764px) {
+  html,
+  body,
+  #root,
+  .App {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   .BANNER {
     height: auto;
     margin-top: 100px;
@@ -608,6 +623,7 @@
   .ProjectBody {
     width: 100%;
   }
+
   .myExpertize p {
     font-size: 25px;
     letter-spacing: 1px;
@@ -631,6 +647,9 @@
   }
 
   .myExpertize {
+    width: 100%;
+  }
+  .Projects {
     width: 100%;
   }
 }
