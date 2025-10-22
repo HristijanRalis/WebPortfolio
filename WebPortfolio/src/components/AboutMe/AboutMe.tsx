@@ -25,6 +25,17 @@ I’m now nearing completion of the Front-End Academy at Brainster, where I’ve
             />
           </div>
         </div>
+
+        <div className="row">
+          <div className="container">
+            <div className="myExpertize py-5">
+              <p>
+                HTML, CSS, SCSS, Bootstrap, Javascript, Asynchronous Javascript,
+                React, Next.js, GitHub, GitLab
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

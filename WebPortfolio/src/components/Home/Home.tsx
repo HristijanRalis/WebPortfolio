@@ -16,11 +16,7 @@ export const Home = () => {
             <span className="quote">outside of your comfort zone.</span>
           </h1>
           <p className="mainDesc">
-            I'm an enthusiast in the field of web programming, passionate about
-            building dynamic and meaningful web applications. My journey began
-            with creating simple projects using HTML and CSS, and over time,
-            I've grown into developing fully functional, modern web pages that
-            bring real value to users...
+            I'm an enthusiast in the field of web programming
           </p>
         </div>
 

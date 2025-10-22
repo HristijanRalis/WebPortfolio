@@ -199,7 +199,7 @@
   text-align: center;
 }
 .BannerContainer {
-  width: 50%;
+  width: 100%;
 }
 
 .BannerImage {
@@ -222,13 +222,12 @@
 }
 
 .mainTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
-.subTitle {
-  color: rgb(151, 133, 245);
-}
+/* Gradient text for second line */
 .quote {
+  display: block;
   background: linear-gradient(90deg, rgb(151, 133, 245), #ff00dd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -236,8 +235,37 @@
   color: transparent;
 }
 
+.subTitle {
+  color: rgb(151, 133, 245);
+}
+
 .mainDesc {
-  font-size: 20px;
+  font-size: 2rem;
+  color: #d1d1d1;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 14px solid #ff00dd;
+  width: 0;
+  display: inline-block;
+  animation: typing 5s steps(80, end) forwards, blink 0.7s step-end infinite;
+}
+/* Keyframes */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .goOnAboutMe {
@@ -270,6 +298,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.myExpertize {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.myExpertize p {
+  display: inline-block;
+  animation: scrollTrack 30s linear infinite;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #d600b8;
+  font-weight: 700;
 }
 /* ====== PROJECTS ====== */
 
@@ -365,7 +410,16 @@
 
 .stacks {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
+}
+
+.stacksContent {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .stackBtn {
   padding: 10px 20px;
@@ -469,6 +523,30 @@
 }
 
 /* ====== KEYFRAMES ====== */
+
+@keyframes showTitle {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes scrollTrack {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 @keyframes pulseNeon {
   0% {
