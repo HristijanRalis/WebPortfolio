@@ -20,7 +20,13 @@ export const Projects = () => {
               <div className="ProjectDescription">
                 <h4>LFC</h4>
                 <p>
-                  LFC "Lecture For Coding" is my firs real project with impact.
+                  LFC (Lecture For Coding) is my first major project with real
+                  impact. Its main goal is to provide beginners with a solid
+                  foundation in web development by teaching the fundamentals of
+                  HTML, CSS, and JavaScript. In the future, the platform will be
+                  expanded to include more advanced modules such as React,
+                  Next.js, and Bootstrap, offering a complete learning path for
+                  aspiring developers.
                 </p>
 
                 <div className="stacks">
@@ -49,7 +55,14 @@ export const Projects = () => {
               <div className="ProjectDescription">
                 <h4>Youth Can</h4>
                 <p>
-                  LFC "Lecture For Coding" is my firs real project with impact.
+                  Youth Can is a platform that showcases the most valuable ideas
+                  and perspectives of young people. It serves as a space where
+                  youth can explore what truly matters in today’s world and
+                  share their vision for a better future. At its core, the
+                  platform embraces the belief that young people are the driving
+                  force behind the progress of civil society, and that activism
+                  is their most powerful tool for achieving positive social
+                  change.
                 </p>
 
                 <div className="stacks">
@@ -78,7 +91,8 @@ export const Projects = () => {
               <div className="ProjectDescription">
                 <h4>SafeBlink</h4>
                 <p>
-                  LFC "Lecture For Coding" is my firs real project with impact.
+                  Safe Blink is a fully responsive, one-page web app focused on
+                  educating users about safe internet navigation..
                 </p>
 
                 <div className="stacks">
