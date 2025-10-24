@@ -674,13 +674,14 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 426px) {
   .mainTitle {
     font-size: 20px;
   }
 
   .mainDesc {
-    font-size: 10px;
+    width: 80%;
+    font-size: 15px;
   }
   .DESC {
     width: 100%;
