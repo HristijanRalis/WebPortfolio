@@ -9,11 +9,7 @@ export const Projects = () => {
             <Title title="Projects" />
           </div>
           <div className="ProjectsContainer d-flex justify-content-center">
-            <a
-              href="https://lfcmkd.netlify.app/"
-              className="ProjectBody"
-              target="_blank"
-            >
+            <div className="ProjectBody">
               <div className="ProjectContent">
                 <div className="ProjectImage">
                   <img src="/images/LFC.png" alt="lfc" />
@@ -40,15 +36,21 @@ export const Projects = () => {
                       <button className="stackBtn">CSS</button>
                       <button className="stackBtn">Javascript</button>
                     </div>
+
+                    <div className="goToProject">
+                      <a
+                        href="https://lfcmkd.netlify.app/"
+                        className="goToProjectItem"
+                        target="_blank"
+                      >
+                        Visit Page
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </a>
-            <a
-              href="https://youth-cann.netlify.app/"
-              className="ProjectBody"
-              target="_blank"
-            >
+            </div>
+            <div className="ProjectBody">
               <div className="ProjectContent">
                 <div className="ProjectImage">
                   <img src="/images/YOUTH.png" alt="youth" />
@@ -76,15 +78,21 @@ export const Projects = () => {
                       <button className="stackBtn">CSS</button>
                       <button className="stackBtn">Javascript</button>
                     </div>
+
+                    <div className="goToProject">
+                      <a
+                        href="https://youth-cann.netlify.app/"
+                        className="goToProjectItem"
+                        target="_blank"
+                      >
+                        Visit Page
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </a>
-            <a
-              href="https://safeblinkmk.netlify.app/#index"
-              className="ProjectBody"
-              target="_blank"
-            >
+            </div>
+            <div className="ProjectBody">
               <div className="ProjectContent">
                 <div className="ProjectImage">
                   <img src="/images/safeblink.png" alt="safeblink" />
@@ -106,10 +114,20 @@ export const Projects = () => {
                       <button className="stackBtn">CSS</button>
                       <button className="stackBtn">Javascript</button>
                     </div>
+
+                    <div className="goToProject">
+                      <a
+                        href="https://safeblinkmk.netlify.app/#index"
+                        className="goToProjectItem"
+                        target="_blank"
+                      >
+                        Visit Page
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
